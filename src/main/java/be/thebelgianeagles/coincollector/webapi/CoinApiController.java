@@ -33,6 +33,8 @@ public class CoinApiController {
         if (coins.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+        System.out.println("Sending all coins");
+
         return ResponseEntity.ok(coins);
     }
 
@@ -46,6 +48,7 @@ public class CoinApiController {
         if (coins.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+        System.out.println("Sending coins by country");
         return ResponseEntity.ok(coins);
     }
 

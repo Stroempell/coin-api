@@ -24,7 +24,6 @@ public interface CoinMapper {
     @Named("enumToDisplay")
     default String enumToDisplay(COUNTRY country) {
         if (country == null) return null;
-        System.out.println("converting country");
         return Arrays.stream(country.name().split("_"))
                 .map(w -> w.charAt(0) + w.substring(1).toLowerCase())
                 .collect(Collectors.joining(" "));
