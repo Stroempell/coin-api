@@ -49,7 +49,35 @@ VALUES ('75th anniversary', 'VATICAN_CITY', 2004, 'https://www.ecb.europa.eu/eur
        ('European Year of Intercultural Dialogue', 'SAN_MARINO', 2008, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2008/comm_2008_San_Marino.webp'),
        ('60th anniversary of Universal Declaration of Human Rights', 'ITALY', 2008, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2008/comm_2008_Italy.webp'),
        ('Grand-Duke Henri and Château de Berg', 'LUXEMBOURG', 2008, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2008/comm_2008_luxembourg.webp'),
-       ('Hamburg', 'GERMANY', 2008, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2008/comm_2008_de.webp')
+       ('Hamburg', 'GERMANY', 2008, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2008/comm_2008_de.webp'),
+
+       ('Change head of state', 'SPAIN', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Spain_Head.webp'),
+       ('Fight against AIDS', 'FRANCE', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_France_2.webp'),
+       ('100th anniversary of birth of Ilmari Tapiovaara', 'FINLAND', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Finland_2.webp'),
+       ('25th anniversary of the fall of the Berlin Wall', 'VATICAN_CITY', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Vatican.webp'),
+       ('600th anniversary of crowning of Barbara Celjska', 'SLOVENIA', 2009, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Slovenia.webp'),
+       ('50th anniversary of accension to the throne of Grand-Duke Jean', 'LUXEMBOURG', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Luxembourg_2.webp'),
+       ('International Year of Family Farming', 'PORTUGAL', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Portugal_Farming.webp'),
+       ('Malta Independence 1964', 'MALTA', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Malta_2.webp'),
+       ('90th anniversary of death of Giacomo Puccini', 'SAN_MARINO', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_San_Marino_Puccini.webp'),
+       ('150 years of Belgian Red Cross', 'BELGIUM', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Belgium_Cross.webp'),
+       ('150th anniversary of union of the Ionian Islands with Greece', 'GREECE', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Greece.webp'),
+       ('400 years since the death of Demenikos Theotokopoulos', 'GREECE', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Greece_2.webp'),
+       ('Riga - European Capital of Culture 2014', 'LATVIA', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Latvia.webp'),
+       ('200 years of Malta Police Force', 'MALTA', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Malta.webp'),
+       ('500th anniversary of the death of Bramante Lazzari delle Penne di San Marino', 'SAN_MARINO', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_San_Marino_Lazzari.webp'),
+       ('100th anniversary of the birth of Tove Jansson', 'FINLAND', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Finland.webp'),
+       ('200th anniversary of the foundation of Arma dei Carabinieri', 'ITALY', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Italy.webp'),
+       ('450th anniversary of the birth of Galileo Galilei', 'ITALY', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Italy_2.webp'),
+       ('70th anniversary of the Normany landings', 'FRANCE', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_France.webp'),
+       ('Official farewell of former Queen Beatrix', 'NETHERLANDS', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Netherlands.webp'),
+       ('10th anniversary of Slovak accension to the European Union', 'SLOVAKIA', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Slovakia.webp'),
+       ('40th anniversary of the 25th April Revolution', 'PORTUGAL', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Portugal.webp'),
+       ('100th anniversary of the start of the First World War', 'BELGIUM', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Belgium.webp'),
+       ('UNESCOs World Cultural and Natural Heritage Sites - Park Güell', 'SPAIN', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Spain.webp'),
+       ('20 years in the Council of Europe', 'ANDORRA', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_andorra_council.webp'),
+       ('175th anniversary of independence of the Grand-Duchy of Luxembourg', 'LUXEMBOURG', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Luxembourg.webp'),
+       ('Niedersachsen', 'GERMANY', 2014, 'https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014/comm_2014_Germany_Niedersachsen.webp')
 
 
 
