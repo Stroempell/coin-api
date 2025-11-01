@@ -1,10 +1,12 @@
 package be.thebelgianeagles.coincollector.webapi;
 
-import be.thebelgianeagles.coincollector.domain.COUNTRY;
-import be.thebelgianeagles.coincollector.domain.Coin;
+import be.thebelgianeagles.coincollector.domain.Country;
 import be.thebelgianeagles.coincollector.repository.CoinRepository;
+import be.thebelgianeagles.coincollector.repository.CountryRepository;
 import be.thebelgianeagles.coincollector.webapi.dto.CoinDto;
+import be.thebelgianeagles.coincollector.webapi.dto.CountryDto;
 import be.thebelgianeagles.coincollector.webapi.mapper.CoinMapper;
+import be.thebelgianeagles.coincollector.webapi.mapper.CountryMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,14 +19,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/api/coins")
+@RequestMapping("/api/")
 @AllArgsConstructor
 public class CoinApiController {
     private final CoinRepository coinRepository;
+    private final CountryRepository countryRepository;
 
     private final CoinMapper coinMapper;
+    private final CountryMapper countryMapper;
 
-    @GetMapping("")
+    @GetMapping("coins")
     public ResponseEntity<List<CoinDto>> getAllCoins() {
         List<CoinDto> coins = coinRepository.findAll()
                 .stream()
@@ -38,8 +42,8 @@ public class CoinApiController {
         return ResponseEntity.ok(coins);
     }
 
-    @GetMapping("/{country}")
-    public ResponseEntity<List<CoinDto>> getCoinsByCountry(@PathVariable COUNTRY country) {
+    @GetMapping("coins/{country}")
+    public ResponseEntity<List<CoinDto>> getCoinsByCountry(@PathVariable Country country) {
         List<CoinDto> coins = coinRepository.findAllByCountry(country)
                 .stream()
                 .map(coinMapper::toCoinDto)
@@ -50,6 +54,19 @@ public class CoinApiController {
         }
         System.out.println("Sending coins by country");
         return ResponseEntity.ok(coins);
+    }
+
+    @GetMapping("countries")
+    public ResponseEntity<List<CountryDto>> getCoinsByCountry() {
+        List<CountryDto> countries = countryRepository.findAll()
+                .stream()
+                .map(countryMapper::toCountryDto)
+                .collect(Collectors.toList());
+        if (countries.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return ResponseEntity.ok(countries);
     }
 
 }

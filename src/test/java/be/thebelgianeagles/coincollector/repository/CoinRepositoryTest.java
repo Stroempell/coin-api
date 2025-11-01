@@ -1,7 +1,8 @@
 package be.thebelgianeagles.coincollector.repository;
 
 import be.thebelgianeagles.coincollector.TestUtils;
-import be.thebelgianeagles.coincollector.domain.COUNTRY;
+import be.thebelgianeagles.coincollector.domain.COUNTRY_NAME;
+import be.thebelgianeagles.coincollector.domain.Country;
 import be.thebelgianeagles.coincollector.domain.Coin;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,10 +28,14 @@ public class CoinRepositoryTest {
     @Test
     void shouldReturnAllCoins() {
         //Arrange
+        Country belgium = testUtils.createCountry(COUNTRY_NAME.BELGIUM, "urlC1");
+        Country finland = testUtils.createCountry(COUNTRY_NAME.FINLAND, "urlC1");
+
+
         List<Coin> coins = new ArrayList<>();
-        coins.add(testUtils.createCoin("Albert", COUNTRY.BELGIUM, 2005));
-        coins.add(testUtils.createCoin("Filip", COUNTRY.BELGIUM, 2016));
-        coins.add(testUtils.createCoin("Flowers", COUNTRY.FINLAND, 1999));
+        coins.add(testUtils.createCoin("Albert", belgium, 2005, "url1"));
+        coins.add(testUtils.createCoin("Filip", belgium, 2016, "url2"));
+        coins.add(testUtils.createCoin("Flowers", finland, 1999, "url3"));
 
         //Act
         List<Coin> foundCoins = sut.findAll();
@@ -45,13 +50,16 @@ public class CoinRepositoryTest {
     @Test
     void shouldReturnAllCoinsByCountry() {
         //Arrange
+        Country belgium = testUtils.createCountry(COUNTRY_NAME.BELGIUM, "urlC1");
+        Country finland = testUtils.createCountry(COUNTRY_NAME.FINLAND, "urlC1");
+
         List<Coin> coins = new ArrayList<>();
-        coins.add(testUtils.createCoin("Albert", COUNTRY.BELGIUM, 2005));
-        coins.add(testUtils.createCoin("Filip", COUNTRY.BELGIUM, 2016));
-        testUtils.createCoin("Flowers", COUNTRY.FINLAND, 1999);
+        coins.add(testUtils.createCoin("Albert", belgium, 2005, "url1"));
+        coins.add(testUtils.createCoin("Filip", belgium, 2016, "url2"));
+        testUtils.createCoin("Flowers", finland, 1999, "url3");
 
         //Act
-        List<Coin> foundCoins = sut.findAllByCountry(COUNTRY.BELGIUM);
+        List<Coin> foundCoins = sut.findAllByCountry(belgium);
 
         //Assert
         assertEquals(foundCoins.size(), 2);

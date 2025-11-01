@@ -1,31 +1,28 @@
 package be.thebelgianeagles.coincollector.domain;
 
+
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @NoArgsConstructor
-@Table(name="coins")
+@AllArgsConstructor
 @Getter
 @Setter
-public class Coin {
+@Table(name="countries")
+public class Country {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
-    @ManyToOne
-    @JoinColumn(name = "country_id")
-    private Country country;
-    private int year;
+    @Enumerated(EnumType.STRING)
+    private COUNTRY_NAME name;
     private String url;
 
-    public Coin(String name, Country country, int year, String url) {
+    public Country(COUNTRY_NAME name, String url) {
         this.name = name;
-        this.country = country;
-        this.year = year;
         this.url = url;
     }
-
 }
